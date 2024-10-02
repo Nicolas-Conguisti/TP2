@@ -30,4 +30,20 @@ class FacteursPremiersTest {
         assertEquals(resultat, nesultatNormal);
 
     }
+
+    @Test
+    void generate_avec0_retourne_null() {
+
+        //GIVEN
+        int nombre = 0;
+
+        ArrayList<Integer> nesultatNormal = new ArrayList<>();
+
+        //WHEN
+        ArrayList<Integer> resultat = FacteursPremiers.generate(nombre);
+
+        //THEN
+        assertEquals(resultat, nesultatNormal);
+
+    }
 }

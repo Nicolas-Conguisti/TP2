@@ -8,8 +8,11 @@ public class FacteursPremiers {
 
         ArrayList<Integer> listeFacteurs = new ArrayList<>();
 
-        listeFacteurs.add(2);
+        if(nombre <= 0){
+            return listeFacteurs;
+        }
 
+        listeFacteurs.add(2);
 
         return listeFacteurs;
     }
