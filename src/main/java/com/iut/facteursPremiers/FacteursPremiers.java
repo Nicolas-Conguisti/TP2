@@ -15,7 +15,7 @@ public class FacteursPremiers {
         int facteur = 2;
 
         while(nombre > 1){
-            if(nombre % facteur == 0){
+            while(nombre % facteur == 0){
                 listeFacteurs.add(facteur);
                 nombre = nombre / facteur;
             }

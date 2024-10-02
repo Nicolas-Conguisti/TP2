@@ -71,6 +71,44 @@ class FacteursPremiersTest {
     }
 
     @Test
+    void generate_avec8_retourne_2_2_2() {
+
+        //GIVEN
+        int nombre = 8;
+
+        ArrayList<Integer> nesultatNormal = new ArrayList<>();
+        nesultatNormal.add(2);
+        nesultatNormal.add(2);
+        nesultatNormal.add(2);
+
+        //WHEN
+        ArrayList<Integer> resultat = FacteursPremiers.generate(nombre);
+
+        //THEN
+        assertEquals(resultat, nesultatNormal);
+
+    }
+
+    @Test
+    void generate_avec12_retourne_2_2_3() {
+
+        //GIVEN
+        int nombre = 12;
+
+        ArrayList<Integer> nesultatNormal = new ArrayList<>();
+        nesultatNormal.add(2);
+        nesultatNormal.add(2);
+        nesultatNormal.add(3);
+
+        //WHEN
+        ArrayList<Integer> resultat = FacteursPremiers.generate(nombre);
+
+        //THEN
+        assertEquals(resultat, nesultatNormal);
+
+    }
+
+    @Test
     void generate_avec0_retourne_null() {
 
         //GIVEN
