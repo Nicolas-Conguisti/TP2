@@ -53,6 +53,24 @@ class FacteursPremiersTest {
     }
 
     @Test
+    void generate_avec6_retourne_2_3() {
+
+        //GIVEN
+        int nombre = 6;
+
+        ArrayList<Integer> nesultatNormal = new ArrayList<>();
+        nesultatNormal.add(2);
+        nesultatNormal.add(3);
+
+        //WHEN
+        ArrayList<Integer> resultat = FacteursPremiers.generate(nombre);
+
+        //THEN
+        assertEquals(resultat, nesultatNormal);
+
+    }
+
+    @Test
     void generate_avec0_retourne_null() {
 
         //GIVEN

@@ -12,15 +12,16 @@ public class FacteursPremiers {
             return listeFacteurs;
         }
 
-        if(nombre == 2){
-            listeFacteurs.add(2);
-        }
+        int facteur = 2;
 
-        if(nombre == 3){
-            listeFacteurs.add(3);
+        while(nombre > 1){
+            if(nombre % facteur == 0){
+                listeFacteurs.add(facteur);
+                nombre = nombre / facteur;
+            }
+            facteur += 1;
         }
 
         return listeFacteurs;
     }
-
 }
