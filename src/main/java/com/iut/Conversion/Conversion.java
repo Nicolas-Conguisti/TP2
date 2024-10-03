@@ -23,7 +23,12 @@ public class Conversion {
                 nombreRomain += "V";
             }
 
-            else{
+            else if(nombreArabe >= 4){
+                nombreArabe -= 4;
+                nombreRomain += "IV";
+            }
+
+            else {
                 nombreArabe -= 1;
                 nombreRomain += "I";
             }
