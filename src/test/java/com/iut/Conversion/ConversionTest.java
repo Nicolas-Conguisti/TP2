@@ -34,4 +34,19 @@ class ConversionTest {
         assertEquals("I", resultat);
 
     }
+
+    @Test
+    void convertir_2_renvoie_II() {
+
+        //GIVEN
+        int nombreArabe = 1;
+        String resultat;
+
+        //WHEN
+        resultat = Conversion.convertir(1);
+
+        //THEN
+        assertEquals("I", resultat);
+
+    }
 }
