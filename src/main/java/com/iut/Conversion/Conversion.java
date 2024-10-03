@@ -18,6 +18,11 @@ public class Conversion {
                 nombreRomain += "X";
             }
 
+            else if(nombreArabe >= 9){
+                nombreArabe -= 9;
+                nombreRomain += "IX";
+            }
+
             else if(nombreArabe >= 5){
                 nombreArabe -= 5;
                 nombreRomain += "V";

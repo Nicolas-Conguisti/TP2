@@ -17,9 +17,9 @@ class ConversionTest {
     - Si on converti 10 : resultat = 'X'
     - Si on converti 11 : resultat = 'XI'
     - Si on converti 50 : resultat = 'L'
-
     - Si on converti 4 : resultat = 'IV'
     - Si on converti 9 : resultat = 'IX'
+
     - Si on converti 49 : resultat = 'IL'
      */
 
@@ -155,6 +155,21 @@ class ConversionTest {
 
         //THEN
         assertEquals("IV", resultat);
+
+    }
+
+    @Test
+    void convertir_9_renvoie_IX() {
+
+        //GIVEN
+        int nombreArabe = 9;
+        String resultat;
+
+        //WHEN
+        resultat = Conversion.convertir(nombreArabe);
+
+        //THEN
+        assertEquals("IX", resultat);
 
     }
 }
