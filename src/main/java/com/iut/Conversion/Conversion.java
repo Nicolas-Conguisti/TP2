@@ -8,7 +8,12 @@ public class Conversion {
 
         while(nombreArabe > 0){
 
-            if(nombreArabe >= 10){
+            if(nombreArabe >= 50){
+                nombreArabe -= 50;
+                nombreRomain += "L";
+            }
+
+            else if(nombreArabe >= 10){
                 nombreArabe -= 10;
                 nombreRomain += "X";
             }
