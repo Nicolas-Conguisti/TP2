@@ -15,10 +15,11 @@ class ConversionTest {
     - Si on converti 5 : resultat = 'V'
     - Si on converti 6 : resultat = 'VI'
     - Si on converti 10 : resultat = 'X'
+    - Si on converti 50 : resultat = 'L'
     - Si on converti 11 : resultat = 'XI'
     - Si on converti 4 : resultat = 'IV'
     - Si on converti 9 : resultat = 'IX'
-    - Si on converti 49 : resultat = 'XXXXIX'
+    - Si on converti 49 : resultat = 'IL'
      */
 
     @Test
@@ -67,17 +68,17 @@ class ConversionTest {
     }
 
     @Test
-    void convertir_8_renvoie_IIIIIIII() {
+    void convertir_5_renvoie_V() {
 
         //GIVEN
-        int nombreArabe = 8;
+        int nombreArabe = 5;
         String resultat;
 
         //WHEN
         resultat = Conversion.convertir(nombreArabe);
 
         //THEN
-        assertEquals("IIIIIIII", resultat);
+        assertEquals("V", resultat);
 
     }
 }

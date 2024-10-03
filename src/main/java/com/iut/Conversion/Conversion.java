@@ -7,8 +7,17 @@ public class Conversion {
         String nombreRomain = "";
 
         while(nombreArabe > 0){
-            nombreArabe -= 1;
-            nombreRomain += "I";
+
+            if(nombreArabe >= 5){
+                nombreArabe -= 5;
+                nombreRomain += "V";
+            }
+
+            else{
+                nombreArabe -= 1;
+                nombreRomain += "I";
+            }
+
         }
 
         return nombreRomain;
