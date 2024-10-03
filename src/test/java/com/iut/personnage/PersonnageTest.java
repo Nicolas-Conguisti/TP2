@@ -1,5 +1,6 @@
 package com.iut.personnage;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -16,6 +17,7 @@ class PersonnageTest {
     - Si on tourne 5 fois : orientation = EST
      */
 
+
     @Test
     void tourner_0fois_orientation_estNord() {
 
@@ -27,6 +29,19 @@ class PersonnageTest {
 
         //THEN
         assertEquals("NORD", john.orientation);
+    }
+
+        @Test
+        void tourner_1fois_orientation_estEST() {
+
+            //GIVEN
+            Personnage david = new Personnage();
+
+            //WHEN
+            david.tourner(1);
+
+            //THEN
+            assertEquals("EST", david.orientation);
 
     }
 }

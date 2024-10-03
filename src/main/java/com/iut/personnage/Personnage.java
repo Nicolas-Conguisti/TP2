@@ -6,6 +6,10 @@ public class Personnage {
 
     public void tourner(int fois){
 
+        if(fois == 1){
+            this.orientation = "EST";
+        }
+
     }
 
 }
