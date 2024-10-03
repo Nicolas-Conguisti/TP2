@@ -28,7 +28,7 @@ class ConversionTest {
         String resultat;
 
         //WHEN
-        resultat = Conversion.convertir(1);
+        resultat = Conversion.convertir(nombreArabe);
 
         //THEN
         assertEquals("I", resultat);
@@ -39,14 +39,29 @@ class ConversionTest {
     void convertir_2_renvoie_II() {
 
         //GIVEN
-        int nombreArabe = 1;
+        int nombreArabe = 2;
         String resultat;
 
         //WHEN
-        resultat = Conversion.convertir(1);
+        resultat = Conversion.convertir(nombreArabe);
 
         //THEN
-        assertEquals("I", resultat);
+        assertEquals("II", resultat);
+
+    }
+
+    @Test
+    void convertir_3_renvoie_III() {
+
+        //GIVEN
+        int nombreArabe = 3;
+        String resultat;
+
+        //WHEN
+        resultat = Conversion.convertir(nombreArabe);
+
+        //THEN
+        assertEquals("III", resultat);
 
     }
 }

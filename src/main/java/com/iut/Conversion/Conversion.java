@@ -14,6 +14,10 @@ public class Conversion {
             nombreRomain = "II";
         }
 
+        if(nombreArabe == 3){
+            nombreRomain = "III";
+        }
+
         return nombreRomain;
     }
 }
