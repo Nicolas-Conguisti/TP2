@@ -5,9 +5,10 @@ public class Personnage {
     public String orientation = "NORD";
 
     public void tourner(int fois){
-        
 
-        switch (fois){
+        int restenbFois = fois % 4;
+
+        switch (restenbFois){
 
             case 1 :
                 this.orientation = "EST";
@@ -19,10 +20,6 @@ public class Personnage {
 
             case 3 :
                 this.orientation = "OUEST";
-                break;
-
-            case 4 :
-                this.orientation = "NORD";
                 break;
         }
 

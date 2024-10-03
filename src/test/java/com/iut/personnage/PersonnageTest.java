@@ -83,4 +83,17 @@ class PersonnageTest {
         //THEN
         assertEquals("NORD", math.orientation);
     }
+
+    @Test
+    void tourner_5fois_orientation_estEST() {
+
+        //GIVEN
+        Personnage jackson = new Personnage();
+
+        //WHEN
+        jackson.tourner(5);
+
+        //THEN
+        assertEquals("EST", jackson.orientation);
+    }
 }
