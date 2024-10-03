@@ -14,6 +14,14 @@ public class Personnage {
             this.orientation = "SUD";
         }
 
+        if(fois == 3){
+            this.orientation = "OUEST";
+        }
+
+        if(fois == 4){
+            this.orientation = "NORD";
+        }
+
     }
 
 }

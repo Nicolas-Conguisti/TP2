@@ -57,4 +57,30 @@ class PersonnageTest {
         //THEN
         assertEquals("SUD", math.orientation);
     }
+
+    @Test
+    void tourner_3fois_orientation_estOUEST() {
+
+        //GIVEN
+        Personnage math = new Personnage();
+
+        //WHEN
+        math.tourner(3);
+
+        //THEN
+        assertEquals("OUEST", math.orientation);
+    }
+
+    @Test
+    void tourner_4fois_orientation_estNORD() {
+
+        //GIVEN
+        Personnage math = new Personnage();
+
+        //WHEN
+        math.tourner(4);
+
+        //THEN
+        assertEquals("NORD", math.orientation);
+    }
 }
