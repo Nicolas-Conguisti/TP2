@@ -13,6 +13,11 @@ public class Conversion {
                 nombreRomain += "L";
             }
 
+            else if(nombreArabe >= 49){
+                nombreArabe -= 49;
+                nombreRomain += "IL";
+            }
+
             else if(nombreArabe >= 10){
                 nombreArabe -= 10;
                 nombreRomain += "X";
