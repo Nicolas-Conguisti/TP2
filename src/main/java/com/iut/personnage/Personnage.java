@@ -10,6 +10,10 @@ public class Personnage {
             this.orientation = "EST";
         }
 
+        if(fois == 2){
+            this.orientation = "SUD";
+        }
+
     }
 
 }

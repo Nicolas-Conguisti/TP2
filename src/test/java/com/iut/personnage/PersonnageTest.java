@@ -19,7 +19,7 @@ class PersonnageTest {
 
 
     @Test
-    void tourner_0fois_orientation_estNord() {
+    void tourner_0fois_orientation_estNORD() {
 
         //GIVEN
         Personnage john = new Personnage();
@@ -31,17 +31,30 @@ class PersonnageTest {
         assertEquals("NORD", john.orientation);
     }
 
-        @Test
-        void tourner_1fois_orientation_estEST() {
+    @Test
+    void tourner_1fois_orientation_estEST() {
 
-            //GIVEN
-            Personnage david = new Personnage();
+        //GIVEN
+        Personnage david = new Personnage();
 
-            //WHEN
-            david.tourner(1);
+        //WHEN
+        david.tourner(1);
 
-            //THEN
-            assertEquals("EST", david.orientation);
+        //THEN
+        assertEquals("EST", david.orientation);
 
+    }
+
+    @Test
+    void tourner_2fois_orientation_estSUD() {
+
+        //GIVEN
+        Personnage math = new Personnage();
+
+        //WHEN
+        math.tourner(2);
+
+        //THEN
+        assertEquals("SUD", math.orientation);
     }
 }
