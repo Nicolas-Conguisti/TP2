@@ -11,6 +11,7 @@ class ConversionTest {
     - Si on converti 1 : resultat = 'I'
     - Si on converti 2 : resultat = 'II'
     - Si on converti 3 : resultat = 'III'
+    - Si on converti 8 : resultat = 'IIIIIIII' -> faux mais cela aide à savoir si le code est correct
     - Si on converti 5 : resultat = 'V'
     - Si on converti 6 : resultat = 'VI'
     - Si on converti 10 : resultat = 'X'
@@ -62,6 +63,21 @@ class ConversionTest {
 
         //THEN
         assertEquals("III", resultat);
+
+    }
+
+    @Test
+    void convertir_8_renvoie_IIIIIIII() {
+
+        //GIVEN
+        int nombreArabe = 8;
+        String resultat;
+
+        //WHEN
+        resultat = Conversion.convertir(nombreArabe);
+
+        //THEN
+        assertEquals("IIIIIIII", resultat);
 
     }
 }

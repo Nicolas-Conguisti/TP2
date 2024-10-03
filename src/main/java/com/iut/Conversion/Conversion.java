@@ -6,16 +6,9 @@ public class Conversion {
 
         String nombreRomain = "";
 
-        if(nombreArabe == 1){
-            nombreRomain = "I";
-        }
-
-        if(nombreArabe == 2){
-            nombreRomain = "II";
-        }
-
-        if(nombreArabe == 3){
-            nombreRomain = "III";
+        while(nombreArabe > 0){
+            nombreArabe -= 1;
+            nombreRomain += "I";
         }
 
         return nombreRomain;
