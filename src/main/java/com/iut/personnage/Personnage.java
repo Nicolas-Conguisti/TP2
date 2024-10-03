@@ -5,21 +5,25 @@ public class Personnage {
     public String orientation = "NORD";
 
     public void tourner(int fois){
+        
 
-        if(fois == 1){
-            this.orientation = "EST";
-        }
+        switch (fois){
 
-        if(fois == 2){
-            this.orientation = "SUD";
-        }
+            case 1 :
+                this.orientation = "EST";
+                break;
 
-        if(fois == 3){
-            this.orientation = "OUEST";
-        }
+            case 2 :
+                this.orientation = "SUD";
+                break;
 
-        if(fois == 4){
-            this.orientation = "NORD";
+            case 3 :
+                this.orientation = "OUEST";
+                break;
+
+            case 4 :
+                this.orientation = "NORD";
+                break;
         }
 
     }
